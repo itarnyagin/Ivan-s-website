@@ -1,16 +1,25 @@
 <template>
   <div class="home">
-    <h3>Home Vieiw</h3>
+    <vue-header></vue-header>
+    <home-content></home-content>
+    <vue-footer></vue-footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import VueHeader from "../components/VueHeader";
+import HomeContent from "../components/HomeContent";
+import VueFooter from "../components/VueFooter";
 
 export default {
   name: "Home",
   components: {
-
+    VueHeader,
+    HomeContent,
+    VueFooter,
   },
 };
 </script>
+VueFootert>
+
+<style scoped></style>
