@@ -1,13 +1,15 @@
 <template>
   <header>
-    <h1>Ivan Tarnyagin</h1>
+    <span class="header-wrapper">
+      <h1>Ivan Tarnyagin</h1> 
+    </span> 
     <nav>
-        <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/projects">Projects</router-link></li>
-          <li><router-link to="/services">Services</router-link></li>
-        </ul>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
+        <li><router-link to="/services">Services</router-link></li>
+      </ul>
     </nav>
     <button id="changeMode">Change Mode</button>
   </header>
@@ -20,12 +22,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/style/scss/_variables.scss";
+
+
 header {
   background-color: #ddd;
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 13vh;
+  height: $header_height;
+}
+.header-wrapper {
+  height: $header_height;
+  line-height: $header_height;
 }
 h1 {
   font-size: 2em;
