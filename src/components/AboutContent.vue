@@ -61,16 +61,6 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  display: flex;
-  background: #eee;
-}
-h2 {
-  display: block;
-}
-p {
-  width: 500px;
-}
-img {
   height: 400px;
 }
 </style>

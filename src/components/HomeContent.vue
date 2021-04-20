@@ -1,24 +1,25 @@
 <template>
-  <div>
-    <h2>Hello, I'm ivan</h2>
+  <main>
     <div class="content">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dicta
-        delectus qui quis. Quidem corrupti soluta perferendis impedit, tempore
-        nihil, eligendi sequi nesciunt repudiandae quos magni odit optio iusto
-        eos culpa dolores, incidunt id sed accusantium repellat officiis
-        asperiores enim et ullam! Magnam est laboriosam illum pariatur doloribus
-        rerum ea accusamus quibusdam iusto, tempora excepturi fugiat animi saepe
-        explicabo totam at sunt repellat eos cumque in dolorum soluta quam
-        optio! Tempore nostrum ad aut quas.
-      </p>
-      <img
-        src="https://m.media-amazon.com/images/M/MV5BMTI3MDc4NzUyMV5BMl5BanBnXkFtZTcwMTQyMTc5MQ@@._V1_UY1200_CR162,0,630,1200_AL_.jpg"
-        alt=""
-      />
+      <div class="paragraph-wrapper">
+          <h2>Hello, I'm Ivan</h2>
+          <br>
+          <p class="about">
+            Hello.
+            <br>
+            My name is Ivan. I am a web developer based in norway, working mostly on frondend apps, with a great knowlage of:
+            <ul>
+              <br>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+              <li>wasm</li>
+            </ul>
+          </p>
+      </div>
+     <img src="@/assets/handsome_modafaka.jpg" alt="handsome and smart web developer">
     </div>
-    <h3>yeah something like that</h3>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -28,17 +29,45 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/style/scss/_variables.scss";
+
+main {
+  background-color: $main_color; 
+  height: $content_height;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: $border_width solid $font_color;
+
+}
 .content {
   display: flex;
-  background: #eee;
+  width: $cwidth;
+
+  margin-left: $left_margin;
+  border-radius: 50px;
+
+  background-color: $side_color;
+  transition: background-color 0.5s, width 1s;
+}
+.paragraph-wrapper {
+  width: 320px;
+  padding: 40px;
+  
+}
+img {
+  width: $img_width;
+  height: auto;
+}
+.content:hover {
+  background-color: $side_color_hover;
+  width: $cwidth_hover;
 }
 h2 {
   display: block;
 }
 p {
-  width: 500px;
+  line-height: 1.5rem;
+  
 }
-img {
-  height: 400px;
-}
+
 </style>
