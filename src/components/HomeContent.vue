@@ -7,7 +7,7 @@
           <p class="about">
             Hello.
             <br>
-            My name is Ivan. I am a web developer based in norway, working mostly on frondend apps, with a great knowlage of:
+            My name is Ivan. I am a web destroyer based in norway, working mostly on frondend apps, with a great knowlage of:
             <ul>
               <br>
               <li>html</li>
