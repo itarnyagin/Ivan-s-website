@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ServicesContent from '../components/ServicesContent.vue';
+import ServicesContent from "../components/ServicesContent.vue";
 import VueFooter from "../components/VueFooter.vue";
 import VueHeader from "../components/VueHeader.vue";
 

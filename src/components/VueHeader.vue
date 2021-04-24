@@ -9,7 +9,9 @@
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/projects">Projects</router-link></li>
         <li><router-link to="/services">Services</router-link></li>
-        <li><button id="changeMode">Change Mode</button></li>
+        <li>
+          <button id="changeMode" onClick="changeTheme()">Change Mode</button>
+        </li>
       </ul>
     </nav>
   </header>

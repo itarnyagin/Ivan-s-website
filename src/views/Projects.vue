@@ -7,7 +7,7 @@
 <script>
 import VueFooter from "../components/VueFooter.vue";
 import VueHeader from "../components/VueHeader.vue";
-import VueProject from '../components/VueProject.vue';
+import VueProject from "../components/VueProject.vue";
 
 export default {
   name: "Projects",
