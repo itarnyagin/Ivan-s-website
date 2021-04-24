@@ -32,7 +32,7 @@ export default {
 @import "@/style/scss/_variables.scss";
 
 main {
-  background-color: $main_color; 
+  background-color: $main_color_dark; 
   height: $content_height;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -44,22 +44,22 @@ main {
   width: $cwidth;
 
   margin-left: $left_margin;
-  border-radius: 50px;
+  border-radius: $bradius;
 
-  background-color: $side_color;
+  background-color: $side_color_dark;
   transition: background-color 0.5s, width 1s;
 }
 .paragraph-wrapper {
-  width: 320px;
+  width: $pwidth;
   padding: 40px;
   
 }
 img {
   width: $img_width;
-  height: auto;
+    border-radius: $bradius;
 }
 .content:hover {
-  background-color: $side_color_hover;
+  background-color: $side_color_dark_hover;
   width: $cwidth_hover;
 }
 h2 {

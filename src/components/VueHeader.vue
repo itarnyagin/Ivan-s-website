@@ -1,8 +1,8 @@
 <template>
   <header>
     <span class="header-wrapper">
-      <h1>Ivan Tarnyagin</h1> 
-    </span> 
+      <h1>Ivan Tarnyagin</h1>
+    </span>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
@@ -24,14 +24,12 @@ export default {
 <style lang="scss" scoped>
 @import "@/style/scss/_variables.scss";
 
-
 header {
-  background-color: $main_color;
+  background-color: $main_color_dark;
   display: flex;
   justify-content: space-between;
   height: $header_height;
   border-bottom: $border_width solid $font_color;
-
 
   .header-wrapper {
     height: $header_height;
@@ -45,7 +43,6 @@ header {
   }
 }
 
-
 ul {
   list-style: none;
   margin-right: $left_margin;
@@ -56,15 +53,12 @@ ul {
     button {
       height: 40px;
       padding: 10px;
-      background-color: $side_color;
+      background-color: $side_color_dark;
       transition: background-color 0.25s;
     }
     button:hover {
-      background-color: $side_color_hover;
+      background-color: $side_color_dark_hover;
     }
   }
 }
-
-
-
 </style>

@@ -2,15 +2,19 @@ $header_height: 15vh;
 $content_height: 70vh;
 $footer_height: 20vh;
 
-$cwidth: 600px;
-$cwidth_hover: 700px;
+$cwidth: 700px;
+$cwidth_hover: 720px;
+$pwidth: 320px;
+$bradius: 50px;
 $img_width: 400px;
 
 $border_width: 5px;
 $top_margin: 20px;
 $left_margin: 10vw;
-
-$main_color: hsl(264, 100%, 8%);
-$side_color: hsl(336, 100%, 50%);
-$side_color_hover: hsl(336, 100%, 60%);
+// dark mode
+$main_color_dark: hsl(264, 100%, 8%);
+$side_color_dark: #e9897e;
+$side_color_dark_hover: hsl(31, 98%, 66%);
 $font_color: white;
+// light mode
+$main_color_light: #e9897e;

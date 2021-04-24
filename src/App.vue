@@ -6,7 +6,6 @@
 @import "./style/css/global.css";
 @import "@/style/scss/_variables.scss";
 
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +20,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $side_color_dark;
     }
   }
 }

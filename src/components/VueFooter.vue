@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="wrapper">
-      <h2>I am a footer</h2>
+      <h2>Contact me:</h2>
       <address>
         <p>
           Email:
@@ -23,8 +23,12 @@ export default {
 @import "@/style/scss/_variables.scss";
 
 footer {
+  position: fixed;
+  bottom: 0;
   height: $footer_height;
-  background-color: $main_color;
+  width: 100vw;
+  background-color: $main_color_dark;
+  border-top: $border_width solid $font_color;
 
   .wrapper {
     padding-left: $left_margin;
