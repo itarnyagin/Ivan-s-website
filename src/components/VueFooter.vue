@@ -1,15 +1,6 @@
 <template>
   <footer>
-    <div class="wrapper">
-      <h2>Contact me:</h2>
-      <address>
-        <p>
-          Email:
-          <a href="mailto:ivan.tarnyagin@gmail.com">ivan.tarnyagin@gmail.com</a>
-        </p>
-        <p>Phone Number: +47 48157049</p>
-      </address>
-    </div>
+    <h2>Contact me:</h2>
   </footer>
 </template>
 
@@ -23,16 +14,14 @@ export default {
 @import "@/style/scss/_variables.scss";
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: $footer_height;
-  width: 100vw;
-  background-color: $main_color_dark;
+  width: 100vw - $left_margin;
+  padding-left: $left_margin;
+  padding-right: auto;
   border-top: $border_width solid $font_color;
 
-  .wrapper {
-    padding-left: $left_margin;
-    padding-top: $top_margin;
-  }
+  background-color: $main_color_dark;
 }
 </style>

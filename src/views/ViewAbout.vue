@@ -1,19 +1,19 @@
 <template>
   <vue-header></vue-header>
-  <about-content></about-content>
+  <content-about></content-about>
   <vue-footer></vue-footer>
 </template>
 
 <script>
 import VueHeader from "../components/VueHeader.vue";
-import AboutContent from "../components/AboutContent.vue";
+import ContentAbout from "../components/ContentAbout.vue";
 import VueFooter from "../components/VueFooter.vue";
 
 export default {
-  name: "About",
+  name: "ViewAbout",
   components: {
     VueHeader,
-    AboutContent,
+    ContentAbout,
     VueFooter,
   },
 };

@@ -1,20 +1,20 @@
 <template>
   <vue-header></vue-header>
-  <services-content></services-content>
+  <content-services></content-services>
   <vue-footer></vue-footer>
 </template>
 
 <script>
-import ServicesContent from "../components/ServicesContent.vue";
+import ContentServices from "../components/ContentServices.vue";
 import VueFooter from "../components/VueFooter.vue";
 import VueHeader from "../components/VueHeader.vue";
 
 export default {
-  name: "Services",
+  name: "ViewServices",
   components: {
     VueHeader,
     VueFooter,
-    ServicesContent,
+    ContentServices,
   },
 };
 </script>

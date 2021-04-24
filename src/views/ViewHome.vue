@@ -1,25 +1,24 @@
 <template>
   <div class="home">
     <vue-header></vue-header>
-    <home-content></home-content>
+    <content-home></content-home>
     <vue-footer></vue-footer>
   </div>
 </template>
 
 <script>
 import VueHeader from "../components/VueHeader";
-import HomeContent from "../components/HomeContent";
+import ContentHome from "../components/ContentHome";
 import VueFooter from "../components/VueFooter";
 
 export default {
-  name: "Home",
+  name: "ViewHome",
   components: {
     VueHeader,
-    HomeContent,
+    ContentHome,
     VueFooter,
   },
 };
 </script>
-VueFootert>
 
 <style scoped></style>
