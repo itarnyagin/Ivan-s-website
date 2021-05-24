@@ -11,11 +11,16 @@ $img_width: 400px;
 //borders & margins
 $border_width: 5px;
 $top_margin: 20px;
-$left_margin: 10vw;
+$left_margin: 5vw;
+
+// colors -----------------------------------------
 // dark mode
 $main_color_dark: hsl(264, 100%, 8%);
-$side_color_dark: #e9897e;
+$side_color_dark: #ff1664;
 $side_color_dark_hover: hsl(31, 98%, 66%);
-$font_color: white;
+$font_color_dark: white;
 // light mode
-$main_color_light: #e9897e;
+$main_color_light: hsl(6, 71%, 70%);
+$side_color_light: #e9897e;
+$side_color_light_hover: hsl(31, 98%, 66%);
+$font_color_light: white;

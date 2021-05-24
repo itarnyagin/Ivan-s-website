@@ -1,20 +1,17 @@
 <template>
   <header>
-    <span class="header-wrapper">
-      <h1>Ivan Tarnyagin</h1>
-    </span>
+    <h1>Ivan Tarnyagin</h1>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/projects">Projects</router-link></li>
         <li><router-link to="/services">Services</router-link></li>
-        <li>
-          <button id="changeMode" onClick="changeTheme()">Change Mode</button>
-        </li>
       </ul>
+      <button>Change theme</button>
     </nav>
   </header>
+  <hr />
 </template>
 
 <script>
@@ -25,54 +22,30 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/scss/_variables.scss";
+@import "@/style/scss/mixins.scss";
 
 header {
-  background-color: $main_color_dark;
-  display: flex;
-  justify-content: space-between;
+  @include align;
   height: $header_height;
-  border-bottom: $border_width solid $font_color;
-
-  .header-wrapper {
-    height: $header_height;
-    line-height: $header_height;
-
-    h1 {
-      font-size: 2em;
-      display: inline-block;
-      margin-left: $left_margin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: inline-block;
+    margin-top: 10px;
+    li {
+      display: inline;
+      margin-right: 50px;
     }
+  }
+  button {
+    float: right;
+    padding: 10px;
+    background-color: $side_color_dark;
   }
 }
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: $side_color_dark;
-    }
-  }
-}
-
-ul {
-  list-style: none;
-  margin-right: $left_margin;
-  li {
-    display: inline;
-    margin-left: 25px;
-
-    button {
-      height: 40px;
-      padding: 10px;
-      background-color: $side_color_dark;
-      transition: background-color 0.25s;
-    }
-    button:hover {
-      background-color: $side_color_dark_hover;
-    }
-  }
+hr {
+  @include hr;
 }
 </style>

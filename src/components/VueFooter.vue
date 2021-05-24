@@ -1,4 +1,5 @@
 <template>
+  <hr />
   <footer>
     <h2>Contact me:</h2>
   </footer>
@@ -12,16 +13,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/scss/_variables.scss";
+@import "@/style/scss/mixins.scss";
 
+hr {
+  @include hr;
+}
 footer {
-  position: absolute;
-  bottom: 0;
-  height: $footer_height;
-  width: 100vw - $left_margin;
-  padding-left: $left_margin;
-  padding-right: auto;
-  border-top: $border_width solid $font_color;
-
-  background-color: $main_color_dark;
+  @include align;
 }
 </style>

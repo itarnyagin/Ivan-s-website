@@ -1,6 +1,5 @@
 <template>
   <vue-header></vue-header>
-  <vue-project></vue-project>
   <vue-footer></vue-footer>
 </template>
 

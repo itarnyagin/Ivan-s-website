@@ -1,0 +1,14 @@
+@mixin hr {
+  background-color: white;
+  color: white;
+  height: 1px;
+  width: 90vw;
+  padding: 0;
+  margin: 0;
+  margin-left: $left_margin;
+  margin-bottom: 10px;
+}
+@mixin align {
+  width: 90vw;
+  margin-left: $left_margin;
+}
